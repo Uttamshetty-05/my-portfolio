@@ -17,6 +17,49 @@
           display: block;
       }
       .about-console-name { display: none; } /* Hide previous console name since image now used */
+
+      /* Centered Technical Skills */
+      .skill-tags-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 15px;
+      }
+      .skill-tag {
+          background-color: #004f90;
+          color: #fff;
+          padding: 8px 15px;
+          border-radius: 20px;
+          font-size: 14px;
+          font-weight: 500;
+          text-align: center;
+      }
+
+      /* Courses Section */
+      .courses-grid {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          margin-top: 20px;
+          align-items: center;
+      }
+      .course-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background-color: #f7f7f7;
+          padding: 12px 20px;
+          border-radius: 10px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+          width: 100%;
+          max-width: 600px;
+          font-size: 15px;
+          color: #333;
+      }
+      .course-item i {
+          color: #004f90; /* Primary color for check icon */
+      }
     </style>
 </head>
 <body>
@@ -29,6 +72,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#courses">Courses</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -48,10 +92,7 @@
             </p>
             <div class="hero-buttons">
                 <a href="#contact" class="cta-button">Get In Touch</a>
-          <a href="Uttam_shetty_Resume.pdf" download>Download Resume</a>
-
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
+                <a href="Uttam_shetty_Resume.pdf" download><i class="fas fa-download"></i> Download Resume</a>
             </div>
         </div>
     </section>
@@ -60,12 +101,12 @@
     <section id="about" class="about section">
         <div class="container about-content">
             <div class="about-image">
-                <img src="Profile.jpg" alt="Uttam Shetty" class="profile-pic" />
+                <img src="Uttam -4VP22CS110.png" alt="Uttam Shetty" class="profile-pic" />
             </div>
             <div class="about-text">
                 <h3>Hello, I'm Uttam!</h3>
                 <p>
-                    A final year B.E. Computer Science student passionate about technology and innovation. I have experience in Java, Kotlin, Python, and web development, with a strong foundation in full-stack and mobile applications.
+                    A final year B.E. Computer Science student passionate about technology and innovation. I have experience in Java, C, SQL and web development, with a strong foundation in full-stack and mobile applications.
                 </p>
                 <p>
                     I focus on problem-solving, teamwork, and delivering practical, creative solutions to real-world challenges.
@@ -110,7 +151,7 @@
                 </div>
                 <div class="education-item fade-in">
                     <h3>Secondary School Leaving Certificate (SSLC)</h3>
-                    <div class="school">Herga Vittal Shetty Govt. High School, Kuchoor</div>
+                    <div class="school">Herga Vittal Shetty Govt. High School, Kuchur</div>
                     <div class="duration">2018 – 2020</div>
                     <span class="grade">Percentage: 82.4%</span>
                 </div>
@@ -127,19 +168,39 @@
             </div>
             <div class="skill-tags-container">
                 <span class="skill-tag">Java</span>
-                <span class="skill-tag">Kotlin</span>
-                <span class="skill-tag">Python</span>
                 <span class="skill-tag">C</span>
                 <span class="skill-tag">SQL</span>
                 <span class="skill-tag">HTML</span>
                 <span class="skill-tag">CSS</span>
-                <span class="skill-tag">JavaScript</span>
                 <span class="skill-tag">React.js</span>
                 <span class="skill-tag">Firebase</span>
-                <span class="skill-tag">Spring Boot</span>
                 <span class="skill-tag">Docker</span>
                 <span class="skill-tag">Git</span>
                 <span class="skill-tag">GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Completed Section -->
+    <section id="courses" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Courses Completed</h2>
+                <p>Certifications and online courses I've completed</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-item fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Java Programming – Coursera, Duke University (2023)</span>
+                </div>
+                <div class="course-item fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Tata Cybersecurity Security Analyst Job Simulation – Forage (Jun ’25)</span>
+                </div>
+                <div class="course-item fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Deloitte Australia Data Analytics Job Simulation – Forage</span>
+                </div>
             </div>
         </div>
     </section>
@@ -160,9 +221,9 @@
                         <span class="project-type">Academic Project</span>
                         <h3>WildGuard – IoT-based Wildlife Detection & Alert System</h3>
                         <p>
-                            Developed an IoT-based system using ultrasonic sensors and GSM to detect animals near roads in real time. Sends alarms and SMS alerts to reduce human–wildlife conflict.
+                            Developed an Android-based application to detect wild animals on roads and alert drivers within a one-kilometer radius.
                         </p>
-                        <strong>Technologies:</strong> Arduino, Ultrasonic Sensor, GSM Module, Embedded C
+                        <strong>Technologies:</strong> Arduino, YOLOV8, imgbb, Firebase
                     </div>
                 </div>
                 <div class="project-card fade-in">
